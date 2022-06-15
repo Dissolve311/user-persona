@@ -54,20 +54,20 @@
                 ><v-card-title>ABOUT</v-card-title
                 ><v-card-text>{{ item.description }}</v-card-text></v-card
               >
-              <v-card class="mb-6 text-start" color="primary" flat
-                ><v-card-title>Products In Use</v-card-title
-                ><v-card-text
-                  ><products-inuse
-                    :products="item.products"
-                  ></products-inuse></v-card-text
-              ></v-card>
+
               <v-card class="mb-6 text-start" color="primary" flat
                 ><v-card-title>PAIN POINTS</v-card-title
                 ><v-card-text
                   ><pain-points
                     :painpoints="item.painpoints"
                   ></pain-points></v-card-text
-              ></v-card> </v-col></v-row
+              ></v-card>
+              <v-card class="mb-6 text-start" color="primary" flat
+                ><v-card-title>Products In Use</v-card-title
+                ><v-card-text
+                  ><products-inuse
+                    :products="item.products"
+                  ></products-inuse></v-card-text></v-card></v-col></v-row
           ><v-divider></v-divider>
         </v-card>
       </v-tab-item>
@@ -95,7 +95,7 @@ export default {
           name: "Jonathan",
           job: "Sound Designer",
           content: "content1",
-          pic: "https://darkhorseinstitute.com/wp-content/assets/2019/10/audio-engineer-salaries.jpg",
+          pic: "https://news.asu.edu/sites/default/files/jorge_costa.jpg",
           quote: "I am in love with making noise",
           about: {
             age: "35",
@@ -108,7 +108,8 @@ export default {
             "Work seamlessly with the show, the lighting, and the performance",
           painpoints: ["point1", "point2", "point3"],
           products: ["product1", "product2", "product3"],
-          responsibilities: "",
+          responsibilities:
+            "Mix tracks into a balanced nice output, make creative sound design",
           software: "",
           description:
             "Jonathan lives both in the USA and UK where he was born and became a child actor for stage, film before later finding his passion with sound. Jonathan started to work on musical productions in the West End as a mixing engineer and then later as Sound Designer. He loves making creative noise using clean, uncompressed raw sound. He admire sound with detials and hate monotonous work such as editing, phase alignment, etc.",
@@ -118,7 +119,8 @@ export default {
           job: "Theatre Engineer",
           content: "content2",
           pic: "http://www.artsatl.org/wp-content/uploads/1-24-of-24-copy.jpg",
-          quote: "",
+          quote:
+            "Problems happens all the time, remember to compromise and take a step back ",
           about: {
             age: "50",
             location: "United Kingdom",
@@ -126,19 +128,22 @@ export default {
             education: "Undergraduate",
             skills: "system design, training and educating",
           },
-          goals: "",
+          goals:
+            "build theater sets and install sound and lighting systems for theatrical productions in budget, make sure every performance will be successful",
           painpoints: ["point1", "point2", "point3"],
           products: ["product1", "product2", "product3"],
-          responsibilities: "",
+          responsibilities:
+            "Performing arts companies depend on theater engineers to work in conjunction with other production employees, including sound engineering technicians, stage managers, carpenters, decorators and prop managers. Theater engineers build theater sets and install sound and lighting systems for theatrical productions. They also ensure all productions meet building code standards. Salaries for theater engineers vary, depending on where they work within the United States.",
           software: "",
-          description: "",
+          description:
+            "Performing arts companies depend on theater engineers to work in conjunction with other production employees, including sound engineering technicians, stage managers, carpenters, decorators and prop managers. Theater engineers build theater sets and install sound and lighting systems for theatrical productions. They also ensure all productions meet building code standards. Salaries for theater engineers vary, depending on where they work within the United States.",
         },
         {
           name: "Daniel",
           job: "Monitor Engineer",
           content: "content3",
-          pic: "https://evo.audio/wp-content/uploads/2016/11/ASE8-830x553.jpg",
-          quote: "I want to know artists better than themselves",
+          pic: "https://darkhorseinstitute.com/wp-content/assets/2019/10/audio-engineer-salaries.jpg",
+          quote: "Every artist presents challenges",
           about: {
             age: "35",
             location: "United States",
@@ -146,12 +151,27 @@ export default {
             education: "College",
             skills: "system design, training and educating",
           },
-          goals: "Make every artist onstage happy with what they hear",
-          painpoints: ["point1", "point2", "point3"],
-          products: ["IEM", "mixing desk", "audio snake"],
-          responsibilities: "",
+          goals:
+            "Make sure all artists onstage are happy with what they hear, interpret what they're actually asking for",
+          painpoints: [
+            "Communication barrier with artists",
+            "In-ear monitor dropouts",
+            "Failure in understanding people during performance",
+            "Mixxing demands are higher than FOH mixing",
+          ],
+          products: [
+            "PSM-1000 IEM",
+            "Sennheiser G3",
+            "DiGiCo SD7 console",
+            "Audio snake",
+            "wedges",
+            "side fills",
+          ],
+          responsibilities:
+            "Tailor the mixes for each artist on stage , watch and understand every artist onstage, setup stage wiring, monitor system maintenance and reparing ",
           software: "",
-          description: "",
+          description:
+            "Daniel has alwasy loved music, playing guitar in his youth and eventually ending up behind a mixing console. It was at Sugar Hill studios in Houston where he started his career path as a monitor engineer.  He was the monitor engineer for Beyonce's tour and recently, Lady Gaga.",
         },
         {
           name: "Rochelle",
@@ -236,7 +256,7 @@ export default {
         },
         {
           name: "Carl",
-          job: "CF coordinator",
+          job: "RF coordinator",
           content: "content4",
           pic: "https://tbcdn.talentbrew.com/company/694/v1_0/img/radio%20engineer2.jpg",
           quote: "No dropouts, no interference",

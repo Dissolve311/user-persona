@@ -7,7 +7,7 @@
 <script>
 export default {
   props: {
-    painpoints: String,
+    painpoints: Array,
   },
 };
 </script>

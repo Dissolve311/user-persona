@@ -7,7 +7,7 @@
 <script>
 export default {
   props: {
-    products: String,
+    products: Array,
   },
 };
 </script>
