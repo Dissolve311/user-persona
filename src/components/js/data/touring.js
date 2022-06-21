@@ -1,0 +1,225 @@
+module.exports = [{
+    name: "Lisa",
+    job: "Artist",
+    pic: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Blackpink_Lisa_Vogue_2021_%281%29.jpg",
+    quote: "I am born to sing",
+    about: {
+      age: "22",
+      location: "South Korea",
+      experience: "5 years",
+      education: "High school",
+      skills:
+        "Sing, Dance, Stage Performance",
+    },
+    goals:
+      "Show the best me on stage",
+    painpoints: ["Can't sing if IEMs having trouble", "Facial expression control on stage", ],
+    products: ["product1", "product2", "product3"],
+    responsibilities:
+      "Perform the best on stage, singing and dancing simultaneously",
+    software: null,
+    description:
+      " Lisa is a Thai rapper, singer and dancer based in South Korea. She is a member of the South Korean girl group Blackpink formed by YG Entertainment.Lisa made her solo debut with her single album Lalisa in September 2021. The album sold over 736,000 copies in its release week in South Korea, making her the first female artist to do so. The music video for its lead single of the same name recorded 73.6 million views on YouTube in first 24 hours of its release, becoming the most-viewed music video in the first 24 hours on the platform by a solo artist.",
+  },
+  {
+    name: "Jonathan",
+    job: "Sound Designer",
+    pic: "https://news.asu.edu/sites/default/files/jorge_costa.jpg",
+    quote: "I am in love with making noise",
+    about: {
+      age: "40",
+      location: "United Kingdom",
+      experience: "20 years",
+      education: "Bachelor's degree in audio production",
+      skills:
+        "Sound Design, Training and Educating, Editing and Mixing, Audio Recording",
+    },
+    goals:
+      "Work seamlessly with the show, the lighting, and the performance",
+    painpoints: ["point1", "point2", "point3"],
+    products: ["product1", "product2", "product3"],
+    responsibilities:
+      "Record and collect sounds, read scripts to create a cue list for sounds, meet with directors to discuss creative projects, set up sound equipment for live performances, monitor audio for live performances and productions, cue sound effects with playback machines during performances, edit music and audio clips for clarity and to add special effects, record dialogue from actors",
+    software: "Protools",
+    description:
+      "Jonathan lives both in the USA and UK where he was born and became a child actor for stage, film before later finding his passion with sound. Jonathan started to work on musical productions in the West End as a mixing engineer and then later as Sound Designer. He loves making creative noise using clean, uncompressed raw sound. He admire sound with detials and hate monotonous work such as editing, phase alignment, etc.",
+  },
+  {
+    name: "Theresa",
+    job: "Theatre Engineer",
+    pic: "http://www.artsatl.org/wp-content/uploads/1-24-of-24-copy.jpg",
+    quote:
+      "Problems happens all the time, remember to compromise and take a step back ",
+    about: {
+      age: "50",
+      location: "United Kingdom",
+      experience: "35 years",
+      education: "college",
+      skills: "system design, training and educating",
+    },
+    goals:
+      "build theater sets and install sound and lighting systems for theatrical productions in budget, make sure every performance will be successful",
+    painpoints: ["point1", "point2", "point3"],
+    products: ["product1", "product2", "product3"],
+    responsibilities:
+      "Performing arts companies depend on theater engineers to work in conjunction with other production employees, including sound engineering technicians, stage managers, carpenters, decorators and prop managers. Theater engineers build theater sets and install sound and lighting systems for theatrical productions. They also ensure all productions meet building code standards. Salaries for theater engineers vary, depending on where they work within the United States.",
+    software: "",
+    description:
+      "Performing arts companies depend on theater engineers to work in conjunction with other production employees, including sound engineering technicians, stage managers, carpenters, decorators and prop managers. Theater engineers build theater sets and install sound and lighting systems for theatrical productions. They also ensure all productions meet building code standards. Salaries for theater engineers vary, depending on where they work within the United States.",
+  },
+  {
+    name: "Daniel",
+    job: "Monitor Engineer",
+    pic: "https://darkhorseinstitute.com/wp-content/assets/2019/10/audio-engineer-salaries.jpg",
+    quote: "Every artist presents challenges",
+    about: {
+      age: "35",
+      location: "United States",
+      experience: "12 years",
+      education: "College",
+      skills: "system design, training and educating",
+    },
+    goals:
+      "Make sure all artists onstage are happy with what they hear, interpret what they're actually asking for",
+    painpoints: [
+      "Communication with artists",
+      "Wireless dropouts",
+      "Mixing demands are higher than FOH mixing",
+      "Responsible for lots of equipment",
+    ],
+    products: [
+      "Wireless In-Ear Monitoring system",
+      "Mixing console",
+      "Audio snake",
+      "Wedges",
+      "Side fills",
+    ],
+    responsibilities:
+      "Tailor the mixes for each artist on stage , watch and understand every artist onstage, oversee stage wiring setup, monitor system maintenance, frequency coordination when no RF coordinator present",
+    software: "",
+    description:
+      "Daniel has alwasy loved music, playing guitar in his youth and eventually ending up behind a mixing console. It was at Sugar Hill rental house in Houston where he started his career path as a monitor engineer mixing for small bands. He was the monitor engineer for Beyonce's tour and recently, Lady Gaga.",
+  },
+  {
+    name: "Rochelle",
+    job: "Rental House",
+    pic: "https://images.unsplash.com/photo-1628890920690-9e29d0019b9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWlkZGxlJTIwYWdlZCUyMG1hbnxlbnwwfHwwfHw%3D&w=1000&q=80",
+    quote:
+      "Provide customers with the simplest and most efficient solution",
+    about: {
+      age: "53",
+      location: "United States",
+      experience: "22 years",
+      education: "College",
+      skills: "system design, training and educating",
+    },
+    goals: "Tailor a custom audio visual solution for each customer",
+    painpoints: [
+      "Firmware updates from different products are complicated",
+      "Equipment inspections after return",
+      "point3",
+    ],
+    products: [
+      "Wired/wireless microphone",
+      "Laptop Audio Interface",
+      "Audio Mixer",
+      "LED Data/Video Monitor",
+      "Dressed Screen Kit",
+      "Cables and other accessories",
+    ],
+    responsibilities:
+      "Tailor A/V solutions for different events, provide quote, equipment depolyment, A/V system installation, equipment maintanence ",
+    software: "",
+    description: "",
+  },
+  {
+    name: "Arnold",
+    job: "A1",
+    pic: "https://dt7v1i9vyp3mf.cloudfront.net/styles/news_large/s3/imagelibrary/B/Becoming-a-Pro_07-K4dqSOTQDu.quNctoVd4hE8lhHD29Xvr.jpg",
+    quote: "",
+    about: {
+      age: "35",
+      location: "United States",
+      experience: "12 years",
+      education: "College",
+      skills: "system design, training and educating",
+    },
+    goals: "",
+    painpoints: ["point1", "point2", "point3"],
+    products: ["product1", "product2", "product3"],
+    responsibilities: "",
+    software: "",
+    description: "",
+  },
+  {
+    name: "Allie",
+    job: "A2",
+    pic: "https://www.careersinmusic.com/wp-content/uploads/2019/07/audio-engineering.jpg",
+    quote: "It is my mission to ensure that every task is 100% achieved",
+    about: {
+      age: "28",
+      location: "United States",
+      experience: "4 years",
+      education: "College",
+      skills: "system design, training and educating",
+    },
+    goals: "",
+    painpoints: ["point1", "point2", "point3"],
+    products: ["product1", "product2", "product3"],
+    responsibilities: "",
+    software: "",
+    description: "",
+  },
+  {
+    name: "Harold",
+    job: "House of worship",
+    pic: "https://www.mixonline.com/wp-content/uploads/2019/11/la_josh_maichele.jpg",
+    quote: "Speaking for god, I want the best sound",
+    about: {
+      age: "43",
+      location: "United States",
+      experience: "20 years",
+      education: "College",
+      skills: "system design, training and educating",
+    },
+    goals: "",
+    painpoints: ["painpoint1", "painpoint2", "painpoint3"],
+    products: ["product1", "product2", "product3"],
+    responsibilities: "",
+    software: "",
+    description: "",
+  },
+  {
+    name: "Carl",
+    job: "RF coordinator",
+    pic: "https://tbcdn.talentbrew.com/company/694/v1_0/img/radio%20engineer2.jpg",
+    quote: "No dropouts, no interference",
+    about: {
+      age: "35",
+      location: "United States",
+      experience: "12 years",
+      education: "Bachelor's degree in electrical engineering",
+      skills: "system design, training and educating",
+    },
+    goals: "Superb RF stability and agility for productions",
+    painpoints: [
+      "Multiple tools are needed for reliable coordination",
+      "managing all of the frequencies from many people involved in an event",
+      "Finding enough good frequencies",
+      "IR sync and frequency changes in the event",
+    ],
+    products: [
+      "Earphones",
+      "Transmitters",
+      "Receivers",
+      "RF coordination software",
+      "Spectrum manager",
+      "I.E.Ms",
+      "Antennas",
+    ],
+    responsibilities:
+      "Make RF plan for each event, select wireless products and accessories, select and coordinate frequencies, RF walk test, maintain tools and test equipment, ",
+    software: "RF coordination software",
+    description:
+      "Carl is a freelance audio engineer who has worked on numerous international music acts, television productions, and location sound productions. Audio is his full-time job; he created his own LLC and is often contracted on large productions for RF coordination services and/or RF system management. He started his career as a Monitor Engineer for musical acts and -similar to others who have had this role - eventually was expected to also manage the wireless systems for the production. He is adamant that multiple tools are required to provide effective and reliable coordination.",
+  }]
