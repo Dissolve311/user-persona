@@ -1,22 +1,22 @@
 <template>
   <div class="touring">
-    <!-- <h1>This is an touring page</h1> -->
-    <main-page :items="touring_data"></main-page>
+    <!-- <h1>This is an braodcast page</h1> -->
+    <main-page :items="broadcast_data"></main-page>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import MainPage from "@/components/MainPage.vue";
-var data = require('@/components/js/data/touring.js');
+var data = require('@/components/js/data/broadcast.js');
 export default {
-  name: "Touring",
+  name: "Broadcast",
   components: {
     MainPage,
   },
   data() {
     return {
-      touring_data: data,
+      broadcast_data: data,
     };
   },
 };

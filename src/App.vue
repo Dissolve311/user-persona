@@ -1,11 +1,12 @@
 <template>
   <v-app>
-    <v-main>
-      <v-app-bar app color="primary" dark max-height="50px"><div id="nav">
+    <v-main>    
+     <!-- <div class="nav">
           <router-link to="/touring">Touring</router-link> |
-          <router-link to="/tvfilm">TV/Film</router-link>
-        </div></v-app-bar>
-      
+          <router-link to="/tvfilm">TV/Film</router-link> |
+          <router-link to="/broadcast">Broadcast</router-link> |
+          <router-link to="/integrator">Integrator</router-link>
+        </div> -->
       <router-view />
     </v-main>
   </v-app>

@@ -11,23 +11,41 @@ const routes = [
     component: Home,
   },
   {
-    path: "/touring",
-    name: "Touring",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    path:"/content",
+    name:"Content",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Touring.vue"),
+    import(/* webpackChunkName: "about" */ "../views/Content.vue"),
+    children: [
+      {
+        path: "/touring",
+        name: "Touring",
+        // route level code-splitting
+        // this generates a separate chunk (about.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () =>
+          import(/* webpackChunkName: "about" */ "../views/Touring.vue"),
+      },
+      {
+        path: "/tvfilm",
+        name: "Tvfilm",
+        component: () =>
+          import(/* webpackChunkName: "about" */ "../views/Tvfilm.vue"),
+      },
+      {
+        path: "/broadcast",
+        name: "Broadcast",
+        component: () =>
+          import(/* webpackChunkName: "about" */ "../views/Broadcast.vue"),
+      },
+       {
+        path: "/integrator",
+        name: "Integrator",
+        component: () =>
+          import(/* webpackChunkName: "about" */ "../views/Integrator.vue"),
+      },
+  ]
   },
-  {
-    path: "/tvfilm",
-    name: "Tvfilm",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Tvfilm.vue"),
-  },
+ 
 ];
 
 const router = new VueRouter({

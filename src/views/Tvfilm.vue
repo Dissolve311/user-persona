@@ -1,6 +1,5 @@
 <template>
   <div class="tvfilm">
-    <h1>This is an TV/Film page</h1>
     <main-page :items="tvfilm_data"></main-page>
   </div>
 </template>
