@@ -10,6 +10,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "convert-excel-to-json": "^1.7.0",
     "core-js": "^3.6.5",
     "express": "^4.18.1",
     "vue": "^2.6.11",

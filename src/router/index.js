@@ -25,12 +25,7 @@ const routes = [
         component: () =>
           import(/* webpackChunkName: "about" */ "../views/Touring.vue"),
       },
-      {
-        path: "/tvfilm",
-        name: "Tvfilm",
-        component: () =>
-          import(/* webpackChunkName: "about" */ "../views/Tvfilm.vue"),
-      },
+      
       {
         path: "/broadcast",
         name: "Broadcast",
@@ -38,10 +33,16 @@ const routes = [
           import(/* webpackChunkName: "about" */ "../views/Broadcast.vue"),
       },
        {
-        path: "/integrator",
-        name: "Integrator",
+        path: "/venues",
+        name: "Venues",
         component: () =>
-          import(/* webpackChunkName: "about" */ "../views/Integrator.vue"),
+          import(/* webpackChunkName: "about" */ "../views/Venues.vue"),
+      },
+      {
+        path: "/theater",
+        name: "Theater",
+        component: () =>
+          import(/* webpackChunkName: "about" */ "../views/Theater.vue"),
       },
   ]
   },

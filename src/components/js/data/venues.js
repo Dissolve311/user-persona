@@ -1,59 +1,36 @@
 module.exports = [
   {
-    name: "Jonathan",
-    job: "Sound Designer",
-    pic: "https://news.asu.edu/sites/default/files/jorge_costa.jpg",
-    quote: "I am in love with making noise",
+    name: "Daniel",
+    job: "Monitor Engineer",
+    pic: "https://darkhorseinstitute.com/wp-content/assets/2019/10/audio-engineer-salaries.jpg",
+    quote: "Every artist presents challenges",
     about: {
-      age: "40",
-      location: "United Kingdom",
-      experience: "20 years",
-      education: "Bachelor's degree in audio production",
-      skills:
-        "Sound Design, Training and Educating, Editing and Mixing, Audio Recording",
-    },
-    goals:
-      "Work seamlessly with the show, the lighting, and the performance",
-    painpoints: ["point1", "point2", "point3"],
-    products: ["product1", "product2", "product3"],
-    responsibilities:
-      "Record and collect sounds, read scripts to create a cue list for sounds, meet with directors to discuss creative projects, set up sound equipment for live performances, monitor audio for live performances and productions, cue sound effects with playback machines during performances, edit music and audio clips for clarity and to add special effects, record dialogue from actors",
-    software: "Protools",
-    description:
-      "Jonathan lives both in the USA and UK where he was born and became a child actor for stage, film before later finding his passion with sound. Jonathan started to work on musical productions in the West End as a mixing engineer and then later as Sound Designer. He loves making creative noise using clean, uncompressed raw sound. He admire sound with detials and hate monotonous work such as editing, phase alignment, etc.",
-  },
-  
-  {
-    name: "Rochelle",
-    job: "Rental House",
-    pic: "https://images.unsplash.com/photo-1628890920690-9e29d0019b9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWlkZGxlJTIwYWdlZCUyMG1hbnxlbnwwfHwwfHw%3D&w=1000&q=80",
-    quote:
-      "Provide customers with the simplest and most efficient solution",
-    about: {
-      age: "53",
+      age: "35",
       location: "United States",
-      experience: "22 years",
+      experience: "12 years",
       education: "College",
       skills: "system design, training and educating",
     },
-    goals: "Tailor a custom audio visual solution for each customer",
+    goals:
+      "Make sure all artists onstage are happy with what they hear, interpret what they're actually asking for",
     painpoints: [
-      "Firmware updates from different products are complicated",
-      "Equipment inspections after return",
-      "point3",
+      "Communication with artists",
+      "Wireless dropouts",
+      "Mixing demands are higher than FOH mixing",
+      "Responsible for lots of equipment",
     ],
     products: [
-      "Wired/wireless microphone",
-      "Laptop Audio Interface",
-      "Audio Mixer",
-      "LED Data/Video Monitor",
-      "Dressed Screen Kit",
-      "Cables and other accessories",
+      "Wireless In-Ear Monitoring system",
+      "Mixing console",
+      "Audio snake",
+      "Wedges",
+      "Side fills",
     ],
     responsibilities:
-      "Tailor A/V solutions for different events, provide quote, equipment depolyment, A/V system installation, equipment maintanence ",
+      "Tailor the mixes for each artist on stage , watch and understand every artist onstage, oversee stage wiring setup, monitor system maintenance, frequency coordination when no RF coordinator present",
     software: "",
-    description: "",
+    description:
+      "Daniel has alwasy loved music, playing guitar in his youth and eventually ending up behind a mixing console. It was at Sugar Hill rental house in Houston where he started his career path as a monitor engineer mixing for small bands. He was the monitor engineer for Beyonce's tour and recently, Lady Gaga.",
   },
   {
     name: "Arnold",
@@ -67,16 +44,16 @@ module.exports = [
       education: "College",
       skills: "system design, training and educating",
     },
-    goals: "",
+    goals: "Make the best technical design of the sound system",
     painpoints: ["point1", "point2", "point3"],
     products: ["product1", "product2", "product3"],
-    responsibilities: "",
+    responsibilities: "Quotes review, technical design of the sound system including PA, mics, wireless and more, live sound mixing for the show from the FOH position. Tracking along in their Shoflo(rundown), actively taking notes of mic placement, gain, EQ adjustment, saving choices/presets on the console. For strike(load out), the A1 often sticks around and manages the audio department's load out.",
     software: "",
     description: "",
   },
   {
     name: "Allie",
-    job: "A2",
+    job: "A2 Theater",
     pic: "https://www.careersinmusic.com/wp-content/uploads/2019/07/audio-engineering.jpg",
     quote: "It is my mission to ensure that every task is 100% achieved",
     about: {
@@ -88,12 +65,11 @@ module.exports = [
     },
     goals: "",
     painpoints: ["point1", "point2", "point3"],
-    products: ["product1", "product2", "product3"],
-    responsibilities: "",
+    products: ["Wireless system", "Patch bay", "Audio Snake"],
+    responsibilities: "Work closely with A1, coordinate wireless frequencies, place microphones on presenters/performers, RF monitoring, trouble shoot cross patches",
     software: "",
-    description: "",
+    description: "Allie is an assistant audio engineer in...",
   },
-  
   {
     name: "Carl",
     job: "RF coordinator",
@@ -127,4 +103,5 @@ module.exports = [
     software: "RF coordination software",
     description:
       "Carl is a freelance audio engineer who has worked on numerous international music acts, television productions, and location sound productions. Audio is his full-time job; he created his own LLC and is often contracted on large productions for RF coordination services and/or RF system management. He started his career as a Monitor Engineer for musical acts and -similar to others who have had this role - eventually was expected to also manage the wireless systems for the production. He is adamant that multiple tools are required to provide effective and reliable coordination.",
-  }]
+  }
+ ]

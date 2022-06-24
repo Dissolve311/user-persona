@@ -6,7 +6,7 @@
     </v-card-title>
     <div class="container">
       <v-row v-for=" row in rows" :key= "row.name">
-        <v-col v-for="item in row.items" :key="item.router" class="card_item" cols="4">
+        <v-col v-for="item in row.items" :key="item.router" class="card_item" cols="6">
         <v-card
             class="pa-2"
             height="200px"
@@ -45,10 +45,10 @@ export default {
     return {
      rows:[{
       name:"row1",
-      items:[{name:"Touring", router:"/touring",src:"https://www.kcrw.com/news/shows/press-play-with-madeleine-brand/coronavirus-california-governor-war-music/band-tour-managers-covid/@@images/rectangular_image/page-header?v=1629763241.16"},{name:"TV/Film", router:"/tvfilm",src:"https://www.dcs2way.co.uk/SiteAssets/Images/News/Retro-film-production-accessories.jpg"},{name:"Broadcast", router:"/broadcast",src:"https://www.rev.com/blog/wp-content/uploads/2019/11/television-broadcast-media-transcription-services.jpg"},]  
+      items:[{name:"Live sound / Rental", router:"/touring",src:"https://www.kcrw.com/news/shows/press-play-with-madeleine-brand/coronavirus-california-governor-war-music/band-tour-managers-covid/@@images/rectangular_image/page-header?v=1629763241.16"},{name:"Broadcast", router:"/broadcast",src:"https://www.rev.com/blog/wp-content/uploads/2019/11/television-broadcast-media-transcription-services.jpg"},]  
      },{
       name:"row2",
-      items:[{name:"Integrator", router:"/integrator",src:"https://level3av.com/media/zoo/images/why-you-need-an-audio-video-installation-company_6022dec31b126c988eda805987caffbf.jpg"},{name:"Sporting", router:"/link5",src:"https://www.nba.com/clippers/sites/clippers/files/1200-business-awards-release-200114.jpg?w=756&h=425"},{name:"Theatre", router:"/link6",src:"https://assets.simpleviewinc.com/simpleview/image/upload/crm/denver/Wolf-Theatre-1_9299E1D2-E558-47F2-5E23EA27D109804E-9299e0250b0c67c_9299e230-b2fc-4750-be83798bd4da2087.jpg"},]
+      items:[{name:"Venues", router:"/venues",src:"https://level3av.com/media/zoo/images/why-you-need-an-audio-video-installation-company_6022dec31b126c988eda805987caffbf.jpg"},{name:"Theater", router:"/theater",src:"https://assets.simpleviewinc.com/simpleview/image/upload/crm/denver/Wolf-Theatre-1_9299E1D2-E558-47F2-5E23EA27D109804E-9299e0250b0c67c_9299e230-b2fc-4750-be83798bd4da2087.jpg"},]
      }]
     };
   },
