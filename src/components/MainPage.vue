@@ -33,17 +33,17 @@
               ><v-card class="mb-6 text-end" color="primary" flat>
                 <v-card-text>
                   <about-section
-                    :age="item.about.age"
-                    :location="item.about.location"
-                    :education="item.about.education"
-                    :experience="item.about.experience"
+                    :age="item.age"
+                    :location="item.location"
+                    :education="item.education"
+                    :experience="item.experience"
                   ></about-section> </v-card-text
               ></v-card>
               <v-card
                 class="mb-6 text-start"
                 color="primary"
                 flat
-                contenteditable
+                
                 ><v-card-title>RESPONSIBILITIES</v-card-title>
                 <v-card-text> {{ item.responsibilities }}</v-card-text></v-card
               >
@@ -51,7 +51,7 @@
                 class="mb-6 text-start"
                 color="primary"
                 flat
-                contenteditable
+                
                 ><v-card-title>GOALS</v-card-title>
                 <v-card-text> {{ item.goals }}</v-card-text></v-card
               >
@@ -62,7 +62,7 @@
                 class="mb-6 text-start"
                 color="primary"
                 flat
-                contenteditable
+                
                 ><v-card-title>ABOUT</v-card-title
                 ><v-card-text>{{ item.description }}</v-card-text></v-card
               >

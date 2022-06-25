@@ -10,7 +10,7 @@
 // @ is an alias to /src
 import MainPage from "@/components/MainPage.vue";
 var data = require('@/components/js/data/touring.js');
-// var test_data = require('@/components/js/getdata.js')
+var getdata = require('@/components/js/getdata.js')
 export default {
   name: "Touring",
   components: {
@@ -18,13 +18,18 @@ export default {
   },
   data() {
     return {
-      touring_data: data,
+      touring_data:data,
     };
   },
   methods:{
     test(){
-      // console.log(test_data);
+      // console.log(this.parseData(data));
     },
+
+ 
+  },
+  mounted(){
+    this.touring_data=getdata.parseData(data);
   },
 
 };

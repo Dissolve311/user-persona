@@ -9,6 +9,7 @@
 // @ is an alias to /src
 import MainPage from "@/components/MainPage.vue";
 var data = require('@/components/js/data/venues.js');
+var getdata = require('@/components/js/getdata.js');
 export default {
   name: "Venues",
   components: {
@@ -18,6 +19,9 @@ export default {
     return {
       venues_data: data,
     };
+  },
+  mounted(){
+    this.venues_data=getdata.parseData(data);
   },
 };
 </script>

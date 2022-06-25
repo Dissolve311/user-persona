@@ -37,7 +37,7 @@
 <script>
 export default {
   props: {
-    age: String,
+    age: Number,
     location: String,
     education: String,
     experience: String,
