@@ -10,7 +10,7 @@
         <v-card
             class="pa-2"
             height="200px"
-            color="green"
+            color="fourth"
             :to = "item.router"
           >
           <v-img
@@ -54,7 +54,7 @@ export default {
 
   data() {
     return {
-      dialog:true,
+      dialog:false,
       input:null,
       password:"shurewirelesspro",
       alertmsg:"please type in password",
@@ -82,14 +82,14 @@ export default {
 <style scoped>
 /* Helper classes */
 .basil {
-  background-color: #fffbe6 !important;
+  background-color: #363533 !important;
 }
-.basil--text {
+/* .basil--text {
   color: #356859 !important;
-}
+} */
 
 .user-name {
-  background-color: rgb(94, 93, 93);
+  background-color: rgb(63, 63, 63);
   opacity: 0.8;
 }
 

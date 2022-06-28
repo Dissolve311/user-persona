@@ -1,10 +1,10 @@
 <template>
-  <v-card color="basil">
+  <v-card color="bg">
     <v-card-title class="text-center justify-center py-6">
       <h1 class="font-weight-bold text-h2 basil--text">USER PERSONA</h1>
     </v-card-title>
 
-    <v-tabs v-model="tab" background-color="transparent" color="basil" grow>
+    <v-tabs v-model="tab" background-color="bg" color="primary" grow>
       <v-tab v-for="item in items" :key="item.name">
         {{ item.job }}
       </v-tab>
@@ -12,7 +12,7 @@
 
     <v-tabs-items v-model="tab">
       <v-tab-item v-for="item in items" :key="item.name">
-        <v-card color="basil" flat>
+        <v-card color="bg" flat>
           <v-row no-gutters align="start"
             ><v-col cols="4">
               <v-img
@@ -30,7 +30,7 @@
               </v-img></v-col
             >
             <v-col cols="4"
-              ><v-card class="mb-6 text-end" color="primary" flat>
+              ><v-card class="mb-6 text-end" color="bg" flat>
                 <v-card-text>
                   <about-section
                     :age="item.age"
@@ -41,7 +41,7 @@
               ></v-card>
               <v-card
                 class="mb-6 text-start"
-                color="primary"
+                color="bg"
                 flat
                 
                 ><v-card-title>RESPONSIBILITIES</v-card-title>
@@ -49,7 +49,7 @@
               >
               <v-card
                 class="mb-6 text-start"
-                color="primary"
+                color="bg"
                 flat
                 
                 ><v-card-title>GOALS</v-card-title>
@@ -60,7 +60,7 @@
             <v-col cols="4"
               ><v-card
                 class="mb-6 text-start"
-                color="primary"
+                color="bg"
                 flat
                 
                 ><v-card-title>ABOUT</v-card-title
@@ -69,7 +69,7 @@
 
               <v-card
                 class="mb-6 text-start"
-                color="primary"
+                color="bg"
                 flat
                 contenteditable
                 ><v-card-title>PAIN POINTS</v-card-title
@@ -80,7 +80,7 @@
               ></v-card>
               <v-card
                 class="mb-6 text-start"
-                color="primary"
+                color="bg"
                 flat
                 contenteditable
                 ><v-card-title>Products In Use</v-card-title
@@ -124,9 +124,7 @@ export default {
 .basil {
   background-color: #fffbe6 !important;
 }
-.basil--text {
-  color: #356859 !important;
-}
+
 
 .user-name {
   background-color: rgb(94, 93, 93);

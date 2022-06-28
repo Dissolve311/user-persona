@@ -1,16 +1,16 @@
 <template>
   <div class="content">
-    <v-app-bar app color="primary" dark><div class="nav">
-          <v-btn flat to="/touring">Touring</v-btn> |
-          <v-btn to="/venues">Venues</v-btn> |
-          <v-btn to="/broadcast">Broadcast</v-btn> |
-          <v-btn to="/theater">Theater</v-btn>
-        </div><v-spacer></v-spacer><v-btn flat to="/">Home</v-btn>
+    <v-app-bar app color="primary" light><div class="nav">
+          <v-btn flat to="/touring"  color="bg">Touring</v-btn> |
+          <v-btn flat to="/venues" color="bg">Venues</v-btn> |
+          <v-btn to="/broadcast" color="bg">Broadcast</v-btn> |
+          <v-btn to="/theater" color="bg">Theater</v-btn>
+        </div><v-spacer></v-spacer><v-btn flat to="/" color="bg">Home</v-btn>
+        <v-btn icon @click="dialog=true"><span class="mdi mdi-file-replace-outline mdi-24px"></span></v-btn>
         
-        <input id="input" type="file" @change="onChange" />
-        <v-btn @click="updateData">confirm</v-btn>
+        <!-- <v-btn @click="test">test</v-btn> -->
         </v-app-bar>
-
+        <v-dialog v-model="dialog"><update-instruction @closeDialog="dialog=false"></update-instruction></v-dialog>
         <router-view />
   </div>
 </template>
@@ -20,42 +20,24 @@
 
 // const excelToJson = require('convert-excel-to-json');
 // const fs = require('browserify-fs');
-var XLSX = require("xlsx");
-import fileDownload from 'js-file-download'
 
+import UpdateInstruction from '../components/UpdateInstruction.vue';
 
 export default {
   name: "Content",
   components: {
+    UpdateInstruction,
   },
   data:()=>({
     uploaded:null,
+    dialog:false,
+
   }),
   methods:{
+    test(){
+      console.log(this.$router);
+    },
     
-    onChange(e){
-     this.uploaded= e.target.files[0];
-  },
-
-  updateData(){
-    if (this.uploaded){
-      let fileReader = new FileReader();
-      fileReader.readAsBinaryString(this.uploaded);
-      fileReader.onload = (event)=>{
-        // console.log(event.target.result);
-        let data = event. target.result;
-        let workbook = XLSX.read(data,{type:"binary"});
-        console.log(workbook);
-        workbook.SheetNames.forEach(sheet=>{
-          let rowObject = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheet]);
-          console.log(rowObject);
-          let jsonData = 'module.exports='+JSON.stringify(rowObject);
-          fileDownload(jsonData, `${sheet}.js`, 'text/csv')         
-        });
-        
-      }
-    }
-  },
   }
 }
 </script>

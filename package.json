@@ -10,6 +10,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "@mdi/font": "^6.7.96",
     "browserify-fs": "^1.0.0",
     "convert-excel-to-json": "^1.7.0",
     "core-js": "^3.6.5",

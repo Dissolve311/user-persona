@@ -20,6 +20,16 @@ export default {
       venues_data: data,
     };
   },
+  watch: { 
+    //  '$route.params': {
+    //     handler: function(data) {
+    //        console.log(data)
+    //        this.venues_data = data;
+    //     },
+    //     deep: true,
+    //     immediate: true
+    //   }
+},
   mounted(){
     this.venues_data=getdata.parseData(data);
   },
