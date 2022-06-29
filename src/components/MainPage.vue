@@ -12,7 +12,7 @@
 
     <v-tabs-items v-model="tab">
       <v-tab-item v-for="item in items" :key="item.name">
-        <v-card color="bg" flat>
+        <v-card color="bg" flat contenteditable>
           <v-row no-gutters align="start"
             ><v-col cols="4">
               <v-img
@@ -43,7 +43,7 @@
                 class="mb-6 text-start"
                 color="bg"
                 flat
-                
+                contenteditable
                 ><v-card-title>RESPONSIBILITIES</v-card-title>
                 <v-card-text> {{ item.responsibilities }}</v-card-text></v-card
               >
@@ -62,7 +62,7 @@
                 class="mb-6 text-start"
                 color="bg"
                 flat
-                
+                contenteditable
                 ><v-card-title>ABOUT</v-card-title
                 ><v-card-text>{{ item.description }}</v-card-text></v-card
               >

@@ -1,5 +1,5 @@
 <template>
-  <v-list dense color="bg">
+  <v-list dense color="bg" contenteditable>
     <v-list-item>
       <v-list-item-icon>
         <v-icon color="black"> mdi-account </v-icon> Age
