@@ -25,7 +25,7 @@
       >
 
     <v-card-subtitle>
-      Use the <a id="template_link" href="https://docs.google.com/spreadsheets/d/1JN543iHznGfXvs0Q-acKLroRIiHO7K9u/edit?usp=sharing&ouid=101039502307747953288&rtpof=true&sd=true" download="user-persona.xlsx">user-persona.xlsx</a> template, download and modify the content as you want. 
+      Use the <a id="template_link" href="https://docs.google.com/spreadsheets/d/1BCqI2dL5uYZUwMz-Y8cBLp4UNMXlknkU/edit?usp=sharing&ouid=101039502307747953288&rtpof=true&sd=true" download="user-persona.xlsx">user-persona.xlsx</a> template, download and modify the content as you want. 
 Please notice that for column "painpoints" and "products", please use ";" as the segmentation
     </v-card-subtitle>
 
