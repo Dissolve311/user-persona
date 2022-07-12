@@ -1,7 +1,7 @@
 <template>
   <v-card color="bg">
     <v-card-title class="text-center justify-center py-6">
-      <h1 class="font-weight-bold text-h2 basil--text">USER PERSONA</h1>
+      <h1 class="font-weight-bold text-h3 basil--text">USER PERSONA</h1>
     </v-card-title>
 
     <v-tabs v-model="tab" background-color="bg" color="primary" grow>

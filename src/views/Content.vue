@@ -1,11 +1,14 @@
 <template>
   <div class="content">
-    <v-app-bar app color="primary" light><div class="nav">
-          <v-btn flat to="/touring"  color="bg">Touring</v-btn> |
-          <v-btn flat to="/venues" color="bg">Venues</v-btn> |
-          <v-btn to="/broadcast" color="bg">Broadcast</v-btn> |
-          <v-btn to="/theater" color="bg">Theater</v-btn>
-        </div><v-spacer></v-spacer><v-btn flat to="/" color="bg">Home</v-btn>
+    <v-app-bar app color="primary" light>
+      <div class="nav">
+          <v-btn flat to="/touring"  color="bg" >Touring</v-btn> |
+          <v-btn flat to="/venues" color="bg" >Venues</v-btn> |
+          <v-btn to="/broadcast" color="bg" >Broadcast</v-btn> |
+          <v-btn to="/theater" color="bg" >Theater</v-btn>
+        </div>
+        <v-spacer></v-spacer>
+        <v-btn flat icon to="/" ><span class="mdi mdi-home mdi-24px"></span></v-btn>
         <v-btn icon @click="dialog=true"><span class="mdi mdi-file-replace-outline mdi-24px"></span></v-btn>
         
         <!-- <v-btn @click="test">test</v-btn> -->
