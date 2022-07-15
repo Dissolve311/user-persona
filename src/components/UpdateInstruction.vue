@@ -25,8 +25,8 @@
       >
 
     <v-card-subtitle>
-      Use the <a id="template_link" href="https://docs.google.com/spreadsheets/d/1BCqI2dL5uYZUwMz-Y8cBLp4UNMXlknkU/edit?usp=sharing&ouid=101039502307747953288&rtpof=true&sd=true" download="user-persona.xlsx">user-persona.xlsx</a> template, download and modify the content as you want. 
-Please notice that for column "painpoints" and "products", please use ";" as the segmentation
+      After <a id="project_setting" href="https://shure.sharepoint.com/:w:/s/GPM/EUn-x6yKNndIgx6A3C-6nz4BBa95B3rXJxl23bgMpE1ntg?e=sXB1R4" target="_blank">Set up the project at your local PC</a>, use the <a id="template_link" href="https://docs.google.com/spreadsheets/d/1BCqI2dL5uYZUwMz-Y8cBLp4UNMXlknkU/edit?usp=sharing&ouid=101039502307747953288&rtpof=true&sd=true" target="_blank">user-persona.xlsx</a> template, download a copy and modify the content as you want. You can change the file name, but please DO NOT change the worksheets' name inside such as "touring", "venues", etc. In each worksheet, You can add rows if you want to add another job title (person), that's totally fine.
+Please notice that for column "painpoints" and "products", please use ";" as the segmentation so that the webpage will show in bulletpoints.
     </v-card-subtitle>
 
    </v-card>
@@ -84,7 +84,7 @@ You will get four .js files</v-card-text>
         class="mb-12"
         height="200px"
       >
-       <v-card-text>Do NOT change the file names, replace the four files in the "./src/components/js/data" into the new ones you get</v-card-text>
+       <v-card-text >Do NOT change the name of js files, replace four files located at "./src/components/js/data" into the new ones you downloaded</v-card-text>
       </v-card>
       <v-btn text @click="e6=2">
         Previous
@@ -106,7 +106,7 @@ You will get four .js files</v-card-text>
         class="mb-12"
         height="200px"
       >
-      <v-card-text>Refresh the pages! If you want to build, double click the "build.bat" file to run and update the website </v-card-text>
+      <v-card-text>Refresh the preview pages on your localhost url! If you want to build and deploy to shureux website, double click the "build.bat" file. After finish the build, copy the files in "./dist" folder to shure's ftp portal, under "/qinying" folder. <a id="ftp_instructions" href="https://shure.sharepoint.com/:w:/s/GPM/ET73y0DD6m1Eu02eUefnI_AB47XcOciSEIM0yx51iKQgAg?e=E244sT" target="_blank">FTP usage instructions</a></v-card-text>
       </v-card>
       <v-btn text @click="e6=3">
         Previous
@@ -167,3 +167,7 @@ import fileDownload from 'js-file-download'
     },
   }
 </script>
+
+<style scoped>
+
+</style>
