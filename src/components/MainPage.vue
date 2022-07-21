@@ -5,14 +5,14 @@
     </v-card-title>
 
     <v-tabs v-model="tab" background-color="bg" color="primary" grow>
-      <v-tab v-for="item in items" :key="item.name">
+      <v-tab v-for="item in items" :key="item.name" @click="menu=false">
         {{ item.job }}
       </v-tab>
     </v-tabs>
 
     <v-tabs-items v-model="tab">
-      <v-tab-item v-for="item in items" :key="item.name">
-        <v-card color="bg" flat contenteditable>
+      <v-tab-item v-for="item in items" :key="item.name" >
+        <v-card color="bg" flat>
           <v-row no-gutters align="start"
             ><v-col cols="4">
               <v-img
@@ -62,8 +62,52 @@
                 class="mb-6 text-start"
                 color="bg"
                 flat
-                contenteditable
-                ><v-card-title>ABOUT</v-card-title
+                ><v-card-title> <div class="about">ABOUT</div> <v-menu
+      v-model="menu"
+      :close-on-content-click="false"
+      :close-on-click="false"
+      :nudge-width="0"
+      offset-y
+      attach
+      
+      
+      
+    >
+      <template v-slot:activator="{ on, attrs }"> 
+        
+                <v-btn
+                :id="item.name"
+                  v-show="item.special_notes"
+                  color="yellow"
+                  fab
+                  dark
+                  small
+                  relative
+                  v-bind="attrs"
+                  
+          v-on="on"
+                >
+                  <v-icon>mdi-lightbulb</v-icon>
+                </v-btn>
+              
+      </template>
+
+      <v-card class="mx-auto"
+    color="secondary"
+    max-width="400">
+    <v-card-title>Special Notes</v-card-title>
+    <v-card-text>
+      {{item.special_notes}}</v-card-text>
+    <v-card-actions> <v-btn
+        outlined
+        rounded
+        text
+        @click="menu=false"
+      >
+        Got it
+      </v-btn></v-card-actions>
+    </v-card></v-menu>
+        </v-card-title
                 ><v-card-text>{{ item.description }}</v-card-text></v-card
               >
 
@@ -113,6 +157,7 @@ export default {
   data() {
     return {
       tab: null,
+      menu:false,
     };
   },
 };
@@ -129,5 +174,9 @@ export default {
 .user-name {
   background-color: rgb(94, 93, 93);
   opacity: 0.8;
+}
+
+.about{
+  margin-right:10px;
 }
 </style>
