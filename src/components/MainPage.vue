@@ -1,5 +1,5 @@
 <template>
-  <v-card color="bg">
+  <v-card color="bg" height="100vh">
     <v-card-title class="text-center justify-center py-6">
       <h1 class="font-weight-bold text-h3 basil--text">USER PERSONA</h1>
     </v-card-title>
@@ -178,5 +178,9 @@ export default {
 
 .about{
   margin-right:10px;
+}
+
+img {
+  height:100vh;
 }
 </style>
