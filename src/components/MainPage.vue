@@ -17,7 +17,7 @@
             ><v-col cols="4">
               <v-img
                 class="white--text align-end"
-                height="520px"
+                height="90vh"
                 :src="item.pic"
                 ><div class="user-name">
                   <v-card-title>{{ item.name }}</v-card-title>
